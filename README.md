@@ -1,13 +1,13 @@
-# VoiceAssistant
+# Yogi
 
-VoiceAssistant is a Python-based project designed for voice interaction, automation, and assistant functionalities. The project is modular and extensible, supporting various tools and APIs for voice processing and automation tasks.
+Yogi is a Python-based project designed for voice interaction, automation, and assistant functionalities. The project is modular and extensible, supporting various tools and APIs for voice processing and automation tasks.
 
 ## Project Structure
 
-- `agent.py` - Main agent logic for the assistant.
+- `agent.py` - Main agent logic for Yogi.
 - `api.py` - (Empty) Placeholder for API endpoints or integrations.
-- `prompts.py` - Contains prompt templates or logic for the assistant.
-- `tools.py` - Utility functions and tools used by the assistant.
+- `prompts.py` - Contains prompt templates or logic for customizing Yogi's behavior and personality.
+- `tools.py` - Utility functions and tools used by Yogi.
 - `requirements.txt` - Python dependencies for the project.
 - `todo.json` - Task tracking in JSON format.
 - `notes.json` - Project notes and metadata.
@@ -30,14 +30,15 @@ VoiceAssistant is a Python-based project designed for voice interaction, automat
 - **Currency conversion** (using exchangerate.host)
 - **Unit conversion** (using pint)
 - **Timer/alarm** (set timers, get notified)
-- **Google Calendar integration** (view upcoming events; OAuth2 setup required)
+- **Google Calendar integration** (view and add events; OAuth2 setup required)
+- **Customizable prompts and behavior** via `prompts.py` (easily tailor Yogi's personality and responses)
 
 ## Setup Instructions
 
 1. **Clone the repository:**
    ```sh
    git clone <your-repo-url>
-   cd VoiceAssistant
+   cd Yogi
    ```
 2. **Create and activate a virtual environment:**
    ```sh
@@ -55,12 +56,12 @@ VoiceAssistant is a Python-based project designed for voice interaction, automat
    - Create a `.env` file with your Gmail credentials for email sending:
      ```env
      gmail_user=your_email@gmail.com
-     gmail_password=your_app_password
+     gmail_password=your_app_password (this is not the same as your gmail account password)
      ```
 5. **Google Calendar Integration (OAuth2):**
    - Download your Google OAuth2 client credentials as a JSON file (e.g., `client_secret_...json`).
    - Place the file in the project root.
-   - On first use, the assistant will prompt you to log in via a browser to authorize access. This is a one-time setup; credentials are saved in `token.pickle` for future use.
+   - On first use, Yogi will prompt you to log in via a browser to authorize access. This is a one-time setup; credentials are saved in `token.pickle` for future use.
    - **Note:** You must enable the Google Calendar API in your Google Cloud project.
 
 ## Security & Data Protection
