@@ -64,6 +64,16 @@ Yogi is a Python-based project designed for voice interaction, automation, and a
    - On first use, Yogi will prompt you to log in via a browser to authorize access. This is a one-time setup; credentials are saved in `token.pickle` for future use.
    - **Note:** You must enable the Google Calendar API in your Google Cloud project.
 
+## Quick Start
+
+After installing dependencies from `requirements.txt`, you can run Yogi in console mode by executing:
+
+```sh
+python agent.py console
+```
+
+This will launch Yogi in the console, where you can interact using text or voice commands.
+
 ## Security & Data Protection
 
 - **Sensitive files** such as `.env`, `notes.json`, `todo.json`, logs, and virtual environments are excluded from version control via `.gitignore`.
