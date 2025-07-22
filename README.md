@@ -77,5 +77,6 @@ Yogi is a Python-based project designed for voice interaction, automation, and a
 3. Submit a pull request with a clear description of your changes.
 
 ## License
+MIT License
 
-Specify your license here (e.g., MIT, Apache 2.0, etc.). 
+
