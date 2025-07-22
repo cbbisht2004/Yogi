@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+.venv/
+venv/
+voice_env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials and tokens
+client_secret_*.json
+token.pickle
+
+# Log files
+*.log
+
+# Persistent data (if you want to keep these local only)
+todo.json
+notes.json
+
+# LiveKit/agent cache or temp files (if any)
+*.cache 
+.livekit/
